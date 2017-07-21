@@ -1,5 +1,8 @@
+var config = require("./config.json");
+var Styles = require("./greet.css");
+
 module.exports = function() {
   var greatingDiv = document.createElement('div');
-  greatingDiv.textContent = 'Hello! This is my first demo for Webpack.';
+  greatingDiv.textContent = config.greetText;
   return greatingDiv;
 };
